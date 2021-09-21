@@ -1,0 +1,35 @@
+{
+  "name": "mc-questv2",
+  "version": "1.0.0",
+  "description": "A bot for discord :P",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "build_cmd": "node command_builder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshay-VK/mc-questV2.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Akshay-VK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Akshay-VK/mc-questV2/issues"
+  },
+  "homepage": "https://github.com/Akshay-VK/mc-questV2#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
