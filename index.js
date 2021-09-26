@@ -1,5 +1,7 @@
 import * as fs from 'fs';
 
+import * as http from 'http';  
+
 import { Client, Intents, Collection } from 'discord.js';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -34,6 +36,11 @@ client.on('interactionCreate', async interaction => {
 		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 	}
 });
+
+http.createServer(function (req, res) {   
+  res.write("I'm alive");   
+  res.end(); 
+}).listen(8080);
 
 // Login to Discord with your client's token
 client.login(process.env.TOKEN);
